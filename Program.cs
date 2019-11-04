@@ -1,8 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+
 
 namespace Login
 {
@@ -11,8 +13,8 @@ namespace Login
         static void Main(string[] args)
         {
             login();
-			Filtrar();
-		}
+            Filtrar();
+        }
 
         static void login()
         {
@@ -37,33 +39,38 @@ namespace Login
                 Console.WriteLine("Bienvenido " + usuario + "\nIngresando a la tienda");
         }
 
-		static void Filtrar()
-		{
-			string filtro;
-			Console.WriteLine("Elija un filtro para ver la lista de juegos disponibles:\n1) Precio\n2) Requerimientos del sistema\n3) Popularidad\n4) Fecha lanzamiento\n5) Género");
-			filtro = Console.ReadLine();
-			switch (filtro)
-			{
-				case "1":
-					Console.WriteLine("\nPRECIO:\nFortnite: Gratis\nCounter Strike GO: $10\nLOL: $20\nGTA V: $50\nPUBG: $70");
-					break;
-				case "2":
-					Console.WriteLine("\nREQUERIMIENTOS DEL SISTEMA:\nCounter Strike GO: BAJOS\nLOL: BAJOS\nFortnite: INTERMEDIOS\nGTA V: ALTOS\nPUBG: ALTOS");
-					break;
-				case "3":
-					Console.WriteLine("\nPOPULARIDAD:\nLOL: 5/5\nFortnite: 4/5\nCounter Strike GO: 3/5\nGTA V: 3/5\nPUBG: 2/5");
-					break;
-				case "4":
-					Console.WriteLine("\nAÑO DE LANZAMIENTO:\nPUBG: 2018\nFortnite: 2017\nCounter Strike GO: 2012\nGTA V: 2012\nLOL: 2009");
-					break;
-				case "5":
-					Console.WriteLine("\nGÉNERO:\nFortnite: SHOTTER\nCounter Strike GO: SHOTTER\nPUBG: SHOTTER\nLOL: MOBA\nGTA V: SANDBOX");
-					break;
-				default:
-					Console.WriteLine("\nPor favor, ingrese un numero entre 1 y 5 para elegir su filtro");
-					Filtrar();
-					break;
-			}
-		}
+        static void Filtrar()
+        {
+            string filtro;
+            Console.WriteLine("Elija un filtro para ver la lista de juegos disponibles:\n1) Precio\n2) Requerimientos del sistema\n3) Popularidad\n4) Fecha lanzamiento\n5) Género");
+            filtro = Console.ReadLine();
+            switch (filtro)
+            {
+                case "1":
+                    Console.Clear();
+                    Console.WriteLine("\nPRECIO:\nFortnite: Gratis\nCounter Strike GO: $10\nLOL: $20\nGTA V: $50\nPUBG: $70");
+                    break;
+                case "2":
+                    Console.Clear();
+                    Console.WriteLine("\nREQUERIMIENTOS DEL SISTEMA:\nCounter Strike GO: BAJOS\nLOL: BAJOS\nFortnite: INTERMEDIOS\nGTA V: ALTOS\nPUBG: ALTOS");
+                    break;
+                case "3":
+                    Console.Clear();
+                    Console.WriteLine("\nPOPULARIDAD:\nLOL: 5/5\nFortnite: 4/5\nCounter Strike GO: 3/5\nGTA V: 3/5\nPUBG: 2/5");
+                    break;
+                case "4":
+                    Console.Clear();
+                    Console.WriteLine("\nAÑO DE LANZAMIENTO:\nPUBG: 2018\nFortnite: 2017\nCounter Strike GO: 2012\nGTA V: 2012\nLOL: 2009");
+                    break;
+                case "5":
+                    Console.Clear();
+                    Console.WriteLine("\nGÉNERO:\nFortnite: SHOTTER\nCounter Strike GO: SHOTTER\nPUBG: SHOTTER\nLOL: MOBA\nGTA V: SANDBOX");
+                    break;
+                default:
+                    Console.WriteLine("\nPor favor, ingrese un numero entre 1 y 5 para elegir su filtro");
+                    Filtrar();
+                    break;
+            }
+        }
     }
 }
