@@ -65,12 +65,67 @@ namespace Login
                 case "5":
                     Console.Clear();
                     Console.WriteLine("\nGÉNERO:\nFortnite: SHOTTER\nCounter Strike GO: SHOTTER\nPUBG: SHOTTER\nLOL: MOBA\nGTA V: SANDBOX");
-                    break;
+                    break;+
+            }
+            
+            
+            
+            
+            
+            
+            
+            
                 default:
                     Console.WriteLine("\nPor favor, ingrese un numero entre 1 y 5 para elegir su filtro");
                     Filtrar();
                     break;
+                    
+            static void comprar () 
+        {
+                
+            string comprar;
+            Console.WriteLine("eliga que juego desea comprar:\n1) Fortnite\n2) CS GO\n3) LOL\n4) GTAV\n5) PUUBG");
+            comprar = Console.ReadLine();
+            switch (comprar)
+            
+            case "1":
+                Console.Clear();
+                    Console.WriteLine("Fortnite ha sido comprado");
+                break;
+            case "2":
+                    Console.Clear();
+                    Console.WriteLine("CS GO ha sido comprado");
+                    break;
+            case "3":
+                    Console.Clear();
+                    Console.WriteLine("LOL ha sido compraro");
+                    break;
+            case "4":
+                    Console.Clear();
+                    Console.WriteLine("GTAV ha sido comprado");
+                    break;
+             case "5":
+                    Console.Clear();
+                    Console.WriteLine("PUBG ha sido comprado");
+                    break;
+            case "6":
+                    Console.Clear();
+                    Console.WriteLine("volver al menu");
+                    break;
+            }
+                
+                default:
+                    Console.WriteLine("por favor ingrese un numero del 1 al 5 para comprar su juego");
+                    comprar();
+                    break;
+
+
+
+
+
+
+
+            }
             }
         }
     }
-}
