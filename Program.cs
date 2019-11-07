@@ -14,6 +14,7 @@ namespace Login
         {
             login();
             Filtrar();
+            Comprar();
         }
 
         static void login()
@@ -65,67 +66,73 @@ namespace Login
                 case "5":
                     Console.Clear();
                     Console.WriteLine("\nGÉNERO:\nFortnite: SHOTTER\nCounter Strike GO: SHOTTER\nPUBG: SHOTTER\nLOL: MOBA\nGTA V: SANDBOX");
-                    break;+
-            }
-            
-            
-            
-            
-            
-            
-            
-            
+                    break;
                 default:
                     Console.WriteLine("\nPor favor, ingrese un numero entre 1 y 5 para elegir su filtro");
                     Filtrar();
                     break;
-                    
-            static void comprar () 
+
+            }
+        }
+
+        static void Comprar()
         {
-                
+
             string comprar;
-            Console.WriteLine("eliga que juego desea comprar:\n1) Fortnite\n2) CS GO\n3) LOL\n4) GTAV\n5) PUUBG");
+            Console.WriteLine("\nElija que juego desea comprar:\n1) Fortnite\n2) Counter Strike GO\n3) LOL\n4) GTAV\n5) PUBG\n6) Volver al menú");
             comprar = Console.ReadLine();
             switch (comprar)
-            
-            case "1":
-                Console.Clear();
+            {
+
+
+                case "1":
+                    Console.Clear();
                     Console.WriteLine("Fortnite ha sido comprado");
-                break;
-            case "2":
+                    break;
+
+                case "2":
                     Console.Clear();
                     Console.WriteLine("CS GO ha sido comprado");
                     break;
-            case "3":
+
+                case "3":
                     Console.Clear();
                     Console.WriteLine("LOL ha sido compraro");
                     break;
-            case "4":
+
+                case "4":
                     Console.Clear();
                     Console.WriteLine("GTAV ha sido comprado");
                     break;
-             case "5":
+
+                case "5":
                     Console.Clear();
                     Console.WriteLine("PUBG ha sido comprado");
                     break;
-            case "6":
+
+                case "6":
+
                     Console.Clear();
-                    Console.WriteLine("volver al menu");
+                    Filtrar();
+                    Comprar();
                     break;
-            }
-                
+
+
                 default:
                     Console.WriteLine("por favor ingrese un numero del 1 al 5 para comprar su juego");
-                    comprar();
+                    Comprar();
                     break;
 
 
-
-
-
-
-
             }
-            }
+
+
+
         }
     }
+    
+}
+
+
+
+
