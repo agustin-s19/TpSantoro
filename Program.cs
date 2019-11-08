@@ -38,23 +38,22 @@ namespace Login
 
             if (usuario != "" && contraseña != "")
 
-                Console.WriteLine("Bienvenido " + usuario + "\nIngresando a la tienda");
+                Console.WriteLine("Bienvenido " + usuario + "\n\nIngresando a la tienda\n\n");
         }
 
         static void Listado()
         {//Agus, creo que esta es la función que me pediste. Escuchame, si no es esto y hay que hacer otra cosa o agregarle algo más avisame sin drama que tengo la pc y
          //cuelgo un ratito el laburo para arreglarlo.
-            Console.WriteLine("Estos son los juegos que tenemos para ofrecerte en esta oportunidad:\n- Fortnite\n- Counter Strike GO\n- GTA V\n- PUBG\n- League of Legends");
-            Listado();
-            break;
+            Console.WriteLine("Estos son los juegos que tenemos para ofrecerte en esta oportunidad:\n- Fortnite\n- Counter Strike GO\n- GTA V\n- PUBG\n- League of Legends\n");
+            
         }
-
+        
 
 
         static void Filtrar()
         {
             string filtro;
-            Console.WriteLine("Elija un filtro para ver la lista de juegos disponibles:\n1) Precio\n2) Requerimientos del sistema\n3) Popularidad\n4) Fecha lanzamiento\n5) Género");
+            Console.WriteLine("Elija un filtro de acuerdo a su preferencia:\n1) Precio\n2) Requerimientos del sistema\n3) Popularidad\n4) Fecha lanzamiento\n5) Género");
             //Yo acá le pondría otra cosa tipo "Elija una búsqueda o filtro (si querés) de su preferencia para poder elegir el juego/título que más le guste"
             //Te modifiqué un par de títulos de juegos en el código para dejarlo todo igualito. También corregí el género Shooter que estaba mal escrito.
             filtro = Console.ReadLine();
@@ -127,6 +126,7 @@ namespace Login
                 case "6":
 
                     Console.Clear();
+                    Listado();
                     Filtrar();
                     Comprar();
                     break;
@@ -144,9 +144,5 @@ namespace Login
 
         }
     }
-    
+
 }
-
-
-
-
